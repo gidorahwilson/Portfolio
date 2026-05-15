@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Denny | Web Developer</title>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000000;
+  color: #f1f1f1;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2, h3 {
+  margin: 0 0 20px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #22c55e;
+}
+
+.hero-text h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #22c55e;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px #22c55e,
+              0 0 30px #22c55e,
+              0 0 45px #22c55e;
+  transform: translateY(-3px);
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 10px 0;
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(34,197,94,0.3);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Denny</h1>
+    <h2>Web Developer</h2>
+    <p>I build structured and secure web applications using Ruby, Sinatra, and SQL.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+  <div class="hero-image">
+    <img src="C:\Users\User\Pictures\andri (2).jpg" alt="Denny Profile">
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a Web Developer focused on building efficient, structured, and secure web systems.
+    My expertise includes Ruby, Sinatra framework, and SQL-based database design.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Development Skills</h2>
+  <ul>
+    <li>Ruby</li>
+    <li>Sinatra</li>
+    <li>SQL</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <img src="https://via.placeholder.com/800x400" alt="AI Usage Tracker Screenshot">
+    <h3>AI Usage Tracker</h3>
+    <p>
+      Web-based application designed to track and analyze AI usage patterns.
+      Features authentication system, structured database design, and monthly reporting dashboard.
+    </p>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <a href="https://wa.me/6282147612829" class="btn">WhatsApp Me</a>
+</section>
+
+<footer>
+  © 2026 Denny | Web Developer
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
+
